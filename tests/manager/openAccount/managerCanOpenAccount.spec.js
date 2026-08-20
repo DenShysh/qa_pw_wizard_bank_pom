@@ -27,7 +27,7 @@ const addCustomerPage = new AddCustomerPage(page);
 test('Assert manager can add new customer', async ({ page }) => {
 
   const openAccountPage = new OpenAccountPage(page);
-  const customersListPage = new CustomersListPage (page)
+  const customersListPage = new CustomersListPage (page);
   await openAccountPage.selectCustomer(`${firstName} ${lastName}`);
   await openAccountPage.selectCurrency('Dollar');
   await openAccountPage.clickProcessButton();
