@@ -4,7 +4,6 @@ export class OpenAccountPage {
   constructor(page) {
     this.page = page;
     this.customerSelect = page.locator('#userSelect');
-    this.currencySelect = page.locator('#currency');
     this.processButton = page.getByRole('button', { name: 'Process' });
     this.customersTab = page.getByRole('button', { name: 'Customers' });
     this.currencySelect = page.getByTestId('currency');
