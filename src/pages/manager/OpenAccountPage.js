@@ -39,7 +39,7 @@ export class OpenAccountPage {
     await this.page.reload();
   }
   async setDollarCurrency() {
-    await page.getByTestId('currency').selectOption('Dollar').click;
+    await page.getByTestId('currency').selectOption('Dollar').click();
   }
 
 }
